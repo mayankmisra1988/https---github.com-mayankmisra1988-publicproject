@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.main-box{
+    background: url('download1.jpg') no-repeat;
+    position: relative;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.sidebar-menu{
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    background: rgba(255,255,255,0.2);
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+.logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0 0 6px rgba(255,255,255,0.5);
+}
+.logo a{
+    color: #e2e2e2;
+    font-size: 25px;
+    font-weight: 500;
+    position: absolute;
+    left: 50px;
+    line-height: 60px;
+    text-decoration: none;
+
+}
+.sidebar-menu .menu{
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar-menu .menu li{
+    margin-top: 6px;
+    padding: 14px 20px;
+    transition: all 0.3s linear;
+}
+.sidebar-menu .menu i{
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+}
+.sidebar-menu .menu a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.sidebar-menu .menu li:hover{
+    border-left: 2px solid rgb(255, 215, 0);
+    box-shadow: 0 0 4px rgba(255,255 255,0.5);
+}
+.sidebar-menu .social_media{
+    position:absolute;
+    top: 105%;
+    left: 30%;
+    bottom: 20px;
+    transform: translate(-50%);
+    cursor: pointer;
+}
+.social_media i{
+    padding: 0 5px;
+    color: rgb(26, 83, 206);
+    opacity: 0.9;
+    font-size: 28px;
+    transition: all 0.2s linear;
+    
+}
+.social_media i:hover{
+    opacity: 2;
+    color: rgb(255, 215, 0);
+}
+#check{
+    display: none;
+}
+.main-box .btn_one i{
+    color: rgb(240, 8, 8);
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+    opacity: 1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+
+}
+.sidebar-menu .btn_two i{
+    font-size: 22px;
+    font-weight: 700;
+    position: absolute;
+    left: 240px;
+    line-height: 60px;
+    cursor: pointer;
+    opacity: 1;
+    transition: all 0.3s linear;
+}
+.btn_one i:hover{
+    font-size: 29px;
+}
+.btn_two i:hover{
+    font-size: 29px;
+}
+#check:checked ~ .sidebar-menu{
+    left: 0px;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+#check:checked ~ .btn_one i{
+    opacity: 0;
+}
+
+#check:checked ~ .btn_one i{
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+

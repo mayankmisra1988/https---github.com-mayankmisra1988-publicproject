@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #b3b3b3;
+}
+.wrapper{
+    margin: 0px 100px;
+    background-color: bisque;
+}
+
+.header{
+    background-color: goldenrod;
+}
+
+.header > h2{
+    font-family: cursive;
+    font-size: 50px;
+    padding: 10px 50px;
+    color: #1e92de;
+    text-shadow: 1px 1px tomato;
+
+    }
+.main-nav{
+    background-color: rgb(255, 196, 232);
+    border: 2px solid yellowgreen;    
+    margin-top: 50px;
+    padding-top: 50px;
+} 
+.main-nav >ul{
+    background-color: cadetblue;
+    list-style: none;
+    padding-left: 30px;
+}
+.main-nav>ul>li{
+    display: inline-block;
+    padding: 10px;
+}
+.main-nav>ul>li>a{
+    text-decoration: none;
+    font-size: 18px;
+    font-family: cursive;
+    color: #fff;
+}
+.main-nav>ul>li>a:hover{
+    color:deepskyblue;
+}
+.container{
+    border: 5px solid yellow;
+}
+.content{
+    background-color:deeppink;
+    min-height: 530px;
+    font-size: 18px;
+    padding: 20px;
+    width: 80%;
+    float: left;
+    
+}
+.content>img{
+    display: block;
+    width:80% ;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+.content >p{
+    justify-content: center;
+    color:white;
+    font-family: cursive;
+}
+.right-sidebar{
+    color: white;
+    background-color: darkmagenta;
+    min-height: 665px;
+    width: 20%;
+    float: right;
+    border-left: 2px solid rgb(184, 182, 182);
+}
+.right-sidebar >h1{
+    font-size: 19px;
+    font-family: cursive;
+    background-color: #1e92de;
+    color: #fff;
+    border-top-right-radius: 20px;
+    padding: 5px;
+    text-align: center;
+}
+aside  p{
+    font-family: cursive;
+    padding: 10px;
+    justify-content: center;
+}
+.container::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.footer{
+    border-top: 2px solid rgb(184, 182, 182);
+    background-color: #1e92de;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.footer:hover{
+    color: rgb(214, 188, 155); 
+}
+
+

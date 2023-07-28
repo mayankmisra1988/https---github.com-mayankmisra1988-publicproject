@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="images/avatar.png" alt="imges not found" class="avatar">
+        <h1>Login Here</h1>
+        <form action="#" name="form" id="myform">
+            <p>Username:</p>
+            <input type="text" name="uname" id="myid" value=" " placeholder="Enter Your Name">
+            <p>Password:</p>
+            <input type="password" name="password" id="mypassid"placeholder="Enter Your Password"><br>
+            <input type="submit" name="login" value="Submit" id="submitid"><br><br>
+            <a href="#">Lost your Password ?</a>
+            <a href="#">Don't have an account ?</a>
+
+        </form>
+
+    </div>
+    <script>
+        
+            var form=document.getElementById('myform'); 
+            form.addEventListener('submit',function(event){
+                event.preventDefault();
+                var username=document.getElementById('myid').value;
+                console.log(username);
+                var password=document.getElementById('mypassid').value
+                console.log(password);
+
+            })    
+
+
+        
+
+    </script>
+</body>
+</html>
